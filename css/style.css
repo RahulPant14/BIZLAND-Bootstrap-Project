@@ -1,0 +1,42 @@
+         
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+         
+         /* Custom CSS */
+        body{font-family:"Poppins", sans-serif; overflow: hidden;}
+
+
+         .banner{background: url(../img/hero-bg.jpg) no-repeat center/cover;}
+         .banner{position: relative; z-index: 0;}
+         .banner::before{
+          content: '';
+          display: block;
+          background: rgba(255, 255, 255, 0.6);
+          position: absolute;
+          inset: 0;
+          z-index: -1;    
+         }
+         .banner .banner-imp{display: flex; text-align: center;}
+         .banner .watch-imp{font-size: 16px; color: #000;vertical-align: super;}
+         .banner .play-imp{font-size: 30px;}
+
+         .wrap-4 .about-imp{background: #d9d9dbb6;}
+
+         .wrap-8 .services-imp{background: #d9d9dbb6;}
+
+         .wrap-10 .portfolio-imp{background: #d9d9dbb6;}
+
+         .wrap-11 .team-imp{background: #d9d9dbb6;}
+
+         .wrap-12 .faq-imp{background: #d9d9dbb6;}
+
+         .wrap-13 .contact-imp{background: #d9d9dbb6;}
+
+         .wrap-9{position: relative; z-index: 0;}
+         .wrap-9::before{
+            content: "";
+            position: absolute;
+            display: block;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+         }

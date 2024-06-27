@@ -6,26 +6,14 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-         .banner{background: url(./img/hero-bg.jpg) no-repeat center/cover;}
-         .wrap-2{position: relative; z-index: 0;}
-         /* .wrap-2::before{
-        content: '';
-        background: rgba(234, 61, 61, .79);
-        display: block;
-        position: absolute;
-        inset: 0;
-        z-index: -1; */
-
-    /* } */
-         
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="css/style.css">
 
     <title>BizLand</title>
     
 </head>
 <body>
-    <header >
+    <header id="home" >
         <div class="bg-primary">
             <div class="container ">
                 <div class="topheader d-flex justify-content-between py-2">
@@ -52,19 +40,19 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active text-primary border-bottom border-2 border-primary me-2 d-inline-block" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-primary border-bottom border-2 border-primary me-2 d-inline-block" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark me-2" href="#">About</a>
+                    <a class="nav-link text-dark me-2" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark me-2" href="#">Services</a>
+                    <a class="nav-link text-dark me-2" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark me-2" href="#">Portfolio</a>
+                    <a class="nav-link text-dark me-2" href="#portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark me-2" href="#">Team</a>
+                    <a class="nav-link text-dark me-2" href="#team">Team</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-dark me-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,37 +65,37 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Contact</a>
+                    <a class="nav-link text-dark" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </div>
-   <div class="wrap-2">
+   <section class="wrap-2">
     <div class="banner py-5">
         <div class="container py-5">
             <div class="row flex-lg-row-reverse align-items-center py-5">
               <div class="col-10 col-sm-8 col-lg-4">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-8 col-sm-8">
                 <h2 class="display-5 fw-bold lh-1 mb-3">Welcome to <span class="text-primary">BizLand</span></h2>
                 <p class="lead">We are team of talented designers making websites with Bootstrap.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center">
-                  <a href="" class="btn btn-primary btn-lg px-4 me-md-2">GET STARTED</a>
-                  <a href=""><i class="bi bi-play-circle"></i> Watch Video</a>
+                <div class="gap-2 d-md-flex justify-content-md-start banner-imp">
+                  <a href="#" class="btn btn-primary btn-lg px-4 me-md-2 d-inline-block">GET STARTED</a>
+                  <a href="#" class="d-inline-block text-decoration-none"><i class="bi bi-play-circle play-imp"></i> <span class="watch-imp">Watch Video</span></a>
                 </div>
               </div>
             </div>
           </div>
     </div>
-   </div>
+   </section>
 
-   <div class="wrap-3 py-5">
+   <section class="wrap-3 py-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-3">
           <div class="col">
-            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded">
+            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded" data-aos="zoom-in-down" data-aos-duration="1500">
               <div><i class="bi bi-globe2 fs-1 text-primary"></i></div>
                <h2 class="fs-5">Lorem lpsum</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -116,7 +104,7 @@
           </div>
 
           <div class="col">
-            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded">
+            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded" data-aos="zoom-in-down" data-aos-duration="1500">
               <div><i class="bi bi-file-earmark-text fs-1 text-primary"></i></div>
                <h2 class="fs-5">Lorem lpsum</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -125,7 +113,7 @@
           </div>
 
           <div class="col">
-            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded">
+            <div  class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded"data-aos="zoom-in-up" data-aos-duration="1500">
               <div><i class="bi bi-speedometer2 fs-1 text-primary"></i></div>
                <h2 class="fs-5">Magni Dolories</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -134,7 +122,7 @@
           </div>
 
           <div class="col">
-            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded">
+            <div class="p-3 bg-light shadow-lg p-3 mb-3 bg-body rounded" data-aos="zoom-in-up" data-aos-duration="1500">
               <div><i class="bi bi-globe-asia-australia fs-1 text-primary"></i></div>
                <h2 class="fs-5">Nemo Enem</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -145,13 +133,13 @@
        
         </div>
       </div>
-   </div>
+   </section>
 
-   <div class="wrap-4 bg-light py-5">
+   <section class="wrap-4 bg-light py-5" id="about">
     <div class="container">
       <div class=" row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6 text-center">
-              <h2 class="rounded-pill text-primary bg-warning fs-6 px-2 d-inline-block">ABOUT</h2>
+              <h2 class="rounded-pill text-primary fs-6 px-2 d-inline-block about-imp">ABOUT</h2>
             <h3 class="text-dark">Find Out More <span class="text-primary">About Us</span></h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis adipisicing elit. Veniam.</p>
             </div>
@@ -164,16 +152,16 @@
           <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit commodi provident illo quas! Eum mollitia nam.</p>
           <div class="d-flex">
-            <div class="rounded-circle d-inline-block bg-warning text-center align-content-center me-3" style="width: 50px; height: 50px;"><i class="bi bi-shop text-primary"></i></div>
+            <div class="rounded-circle d-inline-block bg-white text-center align-content-center me-3" style="width: 50px; height: 50px;"><i class="bi bi-shop text-primary"></i></div>
             <div>
               <h4 class="fs-6">Ullamco laboris nisi ut aliquip consequat </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
           <div class="d-flex">
-            <div class="rounded-circle d-inline-block bg-warning text-center align-content-center me-3" style="width: 50px; height: 50px;"><i class="bi bi-images text-primary"></i></div>
+            <div class="rounded-circle d-inline-block bg-white text-center align-content-center me-3" style="width: 50px; height: 50px;"><i class="bi bi-images text-primary"></i></div>
            <div>
-            <h4 class="fs-5">Magnam soluta laboris nisi ut aliquip consequat </h4>
+            <h4 class="fs-5">Magnam soluta laboris nisi ut aliquip</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.adipisicing elit</p>
            </div>
           </div>
@@ -183,9 +171,9 @@
         </div>
       </div>
     </div>
-   </div>
+   </section>
 
-   <div class="wrap-5 py-5">
+   <section class="wrap-5 py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
@@ -224,13 +212,13 @@
       </div>
     </div>
    </div>
-  </div>
+   </section>
 
-  <div class="wrap-6 py-5">
+  <section class="wrap-6 py-5">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-lg-3 text-center">
         <div class="col position-relative mb-5">
-          <div class="bg-light p-3">
+          <div class="bg-light p-3" data-aos="zoom-out-right" data-aos-duration="1500">
                   <div class="border border-5 border-white position-absolute top-0 start-50 translate-middle rounded-circle d-inline-block bg-primary text-center align-content-center" style="width: 60px; height: 60px;"><i class="bi bi-emoji-smile text-light fs-3"></i></div>          
            <div class="py-4">
              <h2>232</h2>
@@ -241,7 +229,7 @@
         </div>
 
         <div class="col position-relative mb-5">
-          <div class="bg-light p-3">
+          <div class="bg-light p-3" data-aos="zoom-out-up" data-aos-duration="1500">
             <div class="border border-5 border-white position-absolute top-0 start-50 translate-middle rounded-circle d-inline-block bg-primary text-center align-content-center" style="width: 60px; height: 60px;"><i class="bi bi-journal-richtext text-light fs-4"></i></div> 
               <div class="py-4">
             <h2>521</h2>
@@ -252,7 +240,7 @@
         </div>
 
         <div class="col position-relative mb-5">
-          <div class="bg-light p-3">
+          <div class="bg-light p-3" data-aos="zoom-out-down" data-aos-duration="1500">
             <div class="border border-5 border-white position-absolute top-0 start-50 translate-middle rounded-circle d-inline-block bg-primary text-center align-content-center" style="width: 60px; height: 60px;"><i class="bi bi-headset text-light fs-4"></i></div> 
             <div class="py-4">
               <h2>1463</h2>
@@ -263,7 +251,7 @@
         </div>
 
         <div class="col position-relative mb-5">
-          <div class="bg-light p-3">
+          <div class="bg-light p-3" data-aos="zoom-out-left" data-aos-duration="1500">
             <div class="border border-5 border-white position-absolute top-0 start-50 translate-middle rounded-circle d-inline-block bg-primary text-center align-content-center" style="width: 60px; height: 60px;"><i class="bi bi-people-fill text-light fs-4"></i></div>  
            <div class="py-4">
             <h2>15</h2>
@@ -276,7 +264,7 @@
      
       </div>
     </div>
- </div>
+  </section>
 
  <div class="wrap-7 bg-light py-4">
   <div class="container">
@@ -306,18 +294,18 @@
   </div>
  </div>
 
-  <div class="wrap-8 py-5 bg-white">
+  <section class="wrap-8 py-5 bg-white" id="services">
         <div class="container">
           <div class=" row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6 text-center">
-              <h2 class="rounded-pill text-primary bg-warning fs-6 px-2 d-inline-block">SERVICES</h2>
+              <h2 class="rounded-pill text-primary fs-6 px-2 d-inline-block services-imp">SERVICES</h2>
               <h3 class="text-dark">Check Our <span class="text-primary">Services</span></h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis adipisicing elit. Veniam.</p>
             </div>
           </div>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-lg-3 text-center">
             <div class="col mb-lg-0 mb-4">
-              <div class="border border-2 border-light py-5">
+              <div class="border border-2 border-light py-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div  class=" bg-light justify-content-center d-inline-block rounded my-3" style="width: 70px; height: 70px;"><i class="bi bi-globe2 fs-1 text-primary"></i></div>
                  <h2 class="fs-5">Lorem lpsum</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -325,7 +313,7 @@
             </div>
   
             <div class="col mb-lg-0 mb-4">
-              <div class="border border-2 border-light py-5">
+              <div class="border border-2 border-light py-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div class=" bg-light justify-content-center d-inline-block rounded my-3" style="width: 70px; height: 70px;"><i class="bi bi-file-earmark-text fs-1 text-primary"></i></div>
                  <h2 class="fs-5">Sed ut perspiciatis</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -334,7 +322,7 @@
             </div>
   
             <div class="col mb-lg-0 mb-4">
-              <div class="border border-2 border-light py-5">
+              <div class="border border-2 border-light py-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div  class=" bg-light justify-content-center d-inline-block rounded my-3" style="width: 70px; height: 70px;"><i class="bi bi-speedometer2 fs-1 text-primary"></i></div>
                  <h2 class="fs-5">Magni Dolories</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -343,7 +331,7 @@
             </div>
   
             <div class="col mb-lg-0 mb-4">
-              <div class="border border-2 border-light py-5">
+              <div class="border border-2 border-light py-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div  class=" bg-light justify-content-center d-inline-block rounded my-3" style="width: 70px; height: 70px;"><i class="bi bi-globe-asia-australia fs-1 text-primary"></i></div>
                  <h2 class="fs-5">Nemo Enem</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -351,7 +339,7 @@
   
             </div>
             <div class="col mb-lg-0 mb-4">
-              <div class="border border-2 border-light py-5">
+              <div class="border border-2 border-light py-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div  class=" bg-light justify-content-center d-inline-block rounded my-3" style="width: 70px; height: 70px;"><i class="bi bi-display fs-1 text-primary"></i></div>
                  <h2 class="fs-5">Dele Cardo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -360,7 +348,7 @@
             </div>
 
             <div class="col mb-lg-0 mb-4">
-              <div class="border border-2 border-light py-5">
+              <div class="border border-2 border-light py-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <div class=" bg-light justify-content-center d-inline-block rounded my-3" style="width: 70px; height: 70px;"><i class="bi bi-shop-window fs-1 text-primary"></i></div>
                  <h2 class="fs-5">Divera Don</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis</p>
@@ -372,9 +360,9 @@
           </div>
         </div>
 
-  </div>
+  </section>
 
-  <div class="wrap-9 my-3 py-3 bg" style="background-image: url(./img/testimonials-bg.jpg); background-size: cover; background-position: center;">
+  <section class="wrap-9 my-3 py-3 bg" style="background-image: url(./img/testimonials-bg.jpg); background-size: cover; background-position: center;">
       <div class="container">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -439,56 +427,56 @@
         </div>
       </div>
  
-    </div>
+  </section>
 
-    <div class="wrap-10 py-5">
+    <section class="wrap-10 py-5" id="portfolio">
       <div class="container">
         <div class=" row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
-            <h2 class="rounded-pill text-primary bg-warning fs-6 px-2 d-inline-block">PORTFOLIO</h2>
+            <h2 class="rounded-pill text-primary fs-6 px-2 d-inline-block portfolio-imp">PORTFOLIO</h2>
             <h3 class="text-dark">Check Our <span class="text-primary">Portfolio</span></h3>
             <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis adipisicing elit. Veniam.</p>
-            <ul class="d-flex justify-content-center list-unstyled">
+            <ul class="d-flex justify-content-center list-unstyled tabs-imp">
              <li class="me-2"><a class="text-primary text-decoration-none active p-2" href="#">ALL</a></li>
               <li class="me-2"><a class="text-secondary text-decoration-none p-2" href="#">APP</a></li>
               <li class="me-2"><a class="text-secondary text-decoration-none p-2" href="#">CARD</a></li>
-             <li class="me-2"> <a class="text-secondary text-decoration-none p-2" href="#">WEB</a></li>
+             <li class="me-2"><a class="text-secondary text-decoration-none p-2" href="#">WEB</a></li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <img class="img-fluid" src="./img/portfolio/portfolio-1.jpg" alt="1" width="420">
-            <img class="img-fluid mt-4" src="./img/portfolio/portfolio-6.jpg" alt="2" width="420">
+            <img class="img-fluid all app web" src="./img/portfolio/portfolio-1.jpg" alt="1" width="420">
+            <img class="img-fluid mt-4 all cards" src="./img/portfolio/portfolio-6.jpg" alt="2" width="420">
             
           </div>
           <div class="col-lg-4">
-            <img class="img-fluid" src="./img/portfolio/portfolio-2.jpg" alt="2" width="420">
-            <img class="img-fluid my-4" src="./img/portfolio/portfolio-5.jpg" alt="2" width="420">
-            <img class="img-fluid" src="./img/portfolio/portfolio-9.jpg" alt="2" width="420">
+            <img class="img-fluid all app" src="./img/portfolio/portfolio-2.jpg" alt="2" width="420">
+            <img class="img-fluid my-4 all web" src="./img/portfolio/portfolio-5.jpg" alt="2" width="420">
+            <img class="img-fluid all cards" src="./img/portfolio/portfolio-9.jpg" alt="2" width="420">
           </div>
           <div class="col-lg-4">
-            <img class="img-fluid" src="./img/portfolio/portfolio-3.jpg" alt="2" width="420">
-            <img class="img-fluid my-4" src="./img/portfolio/portfolio-4.jpg" alt="2" width="420">
-            <img class="img-fluid" src="./img/portfolio/portfolio-7.jpg" alt="2" width="420">
-            <img class="img-fluid my-4" src="./img/portfolio/portfolio-8.jpg" alt="2" width="420">
+            <img class="img-fluid all web" src="./img/portfolio/portfolio-3.jpg" alt="2" width="420">
+            <img class="img-fluid my-4 all app" src="./img/portfolio/portfolio-4.jpg" alt="2" width="420">
+            <img class="img-fluid all cards" src="./img/portfolio/portfolio-7.jpg" alt="2" width="420">
+            <img class="img-fluid my-4 all web" src="./img/portfolio/portfolio-8.jpg" alt="2" width="420">
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="wrap-12 py-5 bg-light">
+    <section class="wrap-11 py-5 bg-light" id="team">
       <div class="container">
         <div class=" row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
-            <h2 class="rounded-pill text-primary bg-warning fs-6 px-2 d-inline-block">TEAM</h2>
+            <h2 class="rounded-pill text-primary fs-6 px-2 d-inline-block team-imp">TEAM</h2>
             <h3 class="text-dark">Our Hardworking <span class="text-primary">Team</span></h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis adipisicing elit. Veniam.</p>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-3">
           <div class="col">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
               <img src="./img/team/team-1.jpg" class="card-img-top img-fluid" alt="1">
               <div class="card-body py-4">
                 <h4 class="fs-5 mb-1">Walter White</h4>
@@ -497,7 +485,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down" data-aos-duration="1500">
               <img src="./img/team/team-2.jpg" class="card-img-top img-fluid" alt="2">
               <div class="card-body py-4">
                 <h4 class="fs-5 mb-1">Sarah Jhonson</h4>
@@ -506,7 +494,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
               <img src="./img/team/team-3.jpg" class="card-img-top img-fluid" alt="3">
               <div class="card-body py-4">
                 <h4 class="fs-5 mb-1">William Anderson</h4>
@@ -515,7 +503,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-down" data-aos-duration="1500">
               <img src="./img/team/team-4.jpg" class="card-img-top img-fluid" alt="4">
               <div class="card-body py-4">
                 <h4 class="fs-5 mb-1">Amanda Japson</h4>
@@ -525,13 +513,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="wrap-13 py-5 bg-light">
+    <section class="wrap-12 py-5 bg-light">
       <div class="container">
         <div class=" row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
-            <h2 class="rounded-pill text-primary bg-warning fs-6 px-2 d-inline-block">F.A.Q</h2>
+            <h2 class="rounded-pill text-primary fs-6 px-2 d-inline-block faq-imp">F.A.Q</h2>
             <h3 class="text-dark">Frequently Asked <span class="text-primary">Questions</span></h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis adipisicing elit. Veniam.</p>
           </div>
@@ -604,13 +592,13 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
-    <div class="wrap-14 py-3">
+    <section class="wrap-13 py-3" id="contact">
       <div class="container">
         <div class=" row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
-            <h2 class="rounded-pill text-primary bg-warning fs-6 px-2 d-inline-block">CONTACT</h2>
+            <h2 class="rounded-pill text-primary fs-6 px-2 d-inline-block contact-imp">CONTACT</h2>
             <h3 class="text-primary">CONTACT US</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, explicabo hic veritatis adipisicing elit. Veniam.</p>
           </div>
@@ -667,9 +655,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="wrap-15 bg-light py-5">
+    <section class="wrap-14 bg-light py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
@@ -682,10 +670,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer>
-      <div class="wrap-16 py-5">
+      <section class="wrap-15 py-5">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-sm-6 col-12">
@@ -729,7 +717,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </footer>
     <div class="copyright bg-light py-3">
       <div class="container">
@@ -751,9 +739,10 @@
     
 
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/common.js"></script>
     
 </body>
 </html>
