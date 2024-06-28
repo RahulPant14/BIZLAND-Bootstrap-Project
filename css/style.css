@@ -4,6 +4,8 @@
          /* Custom CSS */
         body{font-family:"Poppins", sans-serif;}
 
+        
+         .wrap-1 .nav-imp a:hover{color: blue; border-bottom: 2px solid blue; margin: 0; padding-bottom: 0 !important;}
 
          .banner{background: url(../img/hero-bg.jpg) no-repeat center/cover;}
          .banner{position: relative; z-index: 0;}
@@ -24,6 +26,7 @@
          .wrap-8 .services-imp{background: #d9d9dbb6;}
 
          .wrap-10 .portfolio-imp{background: #d9d9dbb6;}
+         .wrap-10 .tabs-imp .active{color: blue !important;}
 
          .wrap-11 .team-imp{background: #d9d9dbb6;}
 
